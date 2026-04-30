@@ -1,0 +1,7 @@
+organism: Escherichia coli DRR751840 
+contigs: 158
+bases: 5035819
+CDS: 4947
+misc_RNA: 241
+tRNA: 71
+tmRNA: 1
