@@ -28,7 +28,7 @@ grep "misc_RNA:" $f | awk '{print $2}' | sed 's/^$/0/' >> mRNA.tmp
 done
 
 # 3. Use 'paste' to join columns and format as a table
-paste names.tmp contigs.tmp bases.tmp cds.tmp mRNA.tmp rr.tmp tRNA.tmp tmRNA.tmp | column -t > ${OUT_DIR}/final_comparison.txt
+paste names.tmp contigs.tmp bases.tmp cds.tmp mRNA.tmp rr.tmp tRNA.tmp tmRNA.tmp | column -t > ${OUT_DIR}/annotation_comparison.txt
 
 # 4. Clean up temporary files
 rm *.tmp
