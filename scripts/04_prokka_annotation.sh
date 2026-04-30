@@ -22,7 +22,7 @@ if [ ! -f "$INPUT_FILE" ]; then echo "Error: $INPUT_FILE was not found. Skipping
 continue
 fi
 
-# 4. Run Prokka (Choice A: Strict Settings)
+# run Prokka (strict settings)
 prokka --outdir "$SAMPLE_OUT"  --prefix "${i}" --genus Escherichia --species coli --strain "${i}" --mincontiglen 1000 --rfam --cpus 8 --force "$INPUT_FILE"
 done
 
