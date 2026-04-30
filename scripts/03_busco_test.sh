@@ -27,7 +27,6 @@ done
 echo "| Sample ID | Complete (C) | Single (S) | Duplicated (D) | Fragmented (F) | Missing (M) |" > "${REPORT_FILE}"
 echo "| :--- | :---: | :---: | :---: | :---: | :---: |" >> "${REPORT_FILE}"
 
-# 2. 遍历 SraRunTable 里的样本名
 for i in $(cut -d ',' -f1 "${DATA_DIR}/SraRunTable.csv" | tail -n +2)
 do
 
